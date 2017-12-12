@@ -1,1 +1,18 @@
-script: ./publish.sh
+env:
+ global:
+ - REPO=${TRAVIS_BUILD_DIR}
+
+before_deploy:
+- cd ..
+- zip ${REPO} pack.zip
+
+deploy:
+  # GitHub - Add zip to release
+  - provider: releases
+    api_key:
+      secure: " 7JozqpZ7nugVNq2nrsxG"
+    file: pack.zip
+    skip_cleanup: true
+    overwrite: true
+    on:
+      tags: true
