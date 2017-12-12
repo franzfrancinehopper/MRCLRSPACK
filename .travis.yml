@@ -22,8 +22,3 @@ deploy:
     overwrite: true
     on:
       tags: true
-<<<<<<< HEAD
-    
-=======
-  
->>>>>>> 41928c0401c8ed743d4400dfa0ca45beb6ad91ab
