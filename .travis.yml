@@ -1,3 +1,5 @@
+install: true
+build: true
 env:
  global:
  - REPO=${TRAVIS_BUILD_DIR}
