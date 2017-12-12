@@ -11,6 +11,7 @@ before_deploy:
 - git config --local user.name "GoodOldJack12"
 - git config --local user.email "deloght.jonathan@gmail.com"
 - git tag "2.0"
+- git push origin --tags
 
 deploy:
   # GitHub - Add zip to release
