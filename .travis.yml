@@ -6,7 +6,7 @@ env:
 
 before_deploy:
 - cd ..
-- zip ${REPO} pack.zip
+- zip pack.zip ${REPO}
 
 deploy:
   # GitHub - Add zip to release
