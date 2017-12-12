@@ -8,8 +8,8 @@ before_deploy:
 - cd ..
 - zip pack.zip ${REPO}
 # Set up git user name and tag this commit
-- git config --local user.name "GoodOldJack12"
-- git config --local user.email "deloght.jonathan@gmail.com"
+- git config user.name "GoodOldJack12"
+- git config user.email "deloght.jonathan@gmail.com"
 - git tag "2.0"
 - git push origin --tags
 
