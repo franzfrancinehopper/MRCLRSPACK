@@ -13,7 +13,7 @@ deploy:
   # GitHub - Add zip to release
   - provider: releases
     api_key:
-      secure: "3fe98cca1f0174da4d37e566df83fb47dd4cff16"
+      secure: "FIX"
     file: pack.zip
     skip_cleanup: true
     overwrite: true
