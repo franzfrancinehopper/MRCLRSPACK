@@ -8,10 +8,6 @@ before_deploy:
 - cd ..
 - zip pack.zip ${REPO}
 # Set up git user name and tag this commit
-- git config user.name "GoodOldJack12"
-- git config user.email "deloght.jonathan@gmail.com"
-- git tag "2.0"
-- git push origin --tags
 
 deploy:
   # GitHub - Add zip to release
@@ -20,6 +16,6 @@ deploy:
       secure: "3fe98cca1f0174da4d37e566df83fb47dd4cff16"
     file: pack.zip
     skip_cleanup: true
-    overwrite: 
+    overwrite: true
     tag_name: "2.0"
 
