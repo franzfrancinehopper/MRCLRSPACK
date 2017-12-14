@@ -8,6 +8,7 @@ branches:
   - master
 before_deploy:
 - git tag "2.0"
+- git push origin --tags
 - cd ..
 - zip pack.zip ${REPO}
 deploy:
