@@ -9,7 +9,7 @@ branches:
 before_deploy:
 - cd ..
 #- zip -j pack.zip ${REPO}
-tar -czpvf pack.zip -C ${REPO} .
+- tar -czpvf pack.zip -C ${REPO} .
 
 deploy:
   provider: releases
