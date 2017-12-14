@@ -8,7 +8,7 @@ branches:
   - master
 before_deploy:
 - cd ${REPO}
-- zip pack.zip ./*
+- zip -R pack.zip ./*
 - mv pack.zip /home/travis/build/GoodOldJack12/pack.zip
 
 deploy:
