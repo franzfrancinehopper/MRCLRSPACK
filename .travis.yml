@@ -8,7 +8,7 @@ branches:
   - master
 before_deploy:
 - cd ..
-- zip pack.zip ${REPO}
+- zip pack.zip ${TRAVIS_BUILD_DIR}
 
 deploy:
   provider: releases
@@ -17,3 +17,4 @@ deploy:
   file: pack.zip
   on:
     repo: GoodOldJack12/MRCLRSPACK
+    skip_cleanup: true
