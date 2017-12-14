@@ -2,7 +2,7 @@ install: true
 script: true
 env:
   global:
-  - REPO=\home\travis\build\GoodOldJack12\MRCLRSPACK
+  - REPO="\home\travis\build\GoodOldJack12\MRCLRSPACK"
 branches:
   only:
   - master
