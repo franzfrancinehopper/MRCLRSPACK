@@ -2,13 +2,13 @@ install: true
 script: true
 env:
   global:
-  - REPO=${TRAVIS_BUILD_DIR}
+  - REPO=\home\travis\build\GoodOldJack12\MRCLRSPACK
 branches:
   only:
   - master
 before_deploy:
 - cd ..
-- zip pack.zip ${REPO}
+- zip -R pack.zip ${REPO}
 
 deploy:
   provider: releases
