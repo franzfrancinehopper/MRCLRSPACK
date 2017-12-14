@@ -1,21 +1,15 @@
 install: true
 script: true
 env:
- global:
- - REPO=${TRAVIS_BUILD_DIR}
-
+  global:
+  - REPO=${TRAVIS_BUILD_DIR}
 before_deploy:
 - cd ..
 - zip pack.zip ${REPO}
-# Set up git user name and tag this commit
-
 deploy:
-  # GitHub - Add zip to release
-  - provider: releases
-    api_key:
-      secure: "FIX"
-    file: pack.zip
-    skip_cleanup: true
-    overwrite: true
-    tag_name: "2.0"
-
+  provider: releases
+  api_key:
+    secure: LOAw/fk9uCd4Ki5LfU4Bt4KDxKXanTSMKlVZMZ5iSVRf1M/X94zxMaQtJ90ciEEoIIOl+SKwfa2zW9XXpt6Hyb/xxdUO4GvBkU8pBKk4JNmOA8YtDm9LTp2Fv4j+4gITPllrX6FkuHENs6MQ1TuZRDiLQvCsABGdW8qicTrBBvDverflPOOeOVPfmefudJ/8BxcuJa1+ZonwTgY7kMV+G/LubrBnEN5TZAchsz8ndBnHAivHLLGrvg0mVxogrW2MCkedrA5z4iBROi6PQ5/XIcZ9hmGU72ckY9BnCHFmvy8pgQyCM/xtHE5hnI3TQia6qhkvDYo4yV5VJQJ2xWhFxoBFKZcOfx6rip7pfvL5Un19yj8BBB2VSbi9h89GNwaBlZwWIs69XiunaiKLswsslw2d7DFKNttqyFQgLcx8LJpekEOpP6XMeBP5CtxCsn00mHxPYHlRSpHHdQnVpVlf/VMYjR9b9bcpr3LjldK1bDW37Fi+bGDnyLf/8FQpsDHYzzSBqlntcInsXGtaa4xGFpH/dE2bzXkVOHZjMHnCgG9CmKELVAlqpKq0AKXpVyUX+pSm39pfcdN2UW8Fv4Cb/vFzote+f30nRh8rJAvyfPI64HZDS3eyTZcG62hgz97sxziomb2XxC/1FdSA6+v69wWfYx9wRaTx1GQARajPVmo=
+  file: pack.zip
+  on:
+    repo: GoodOldJack12/MRCLRSPACK
