@@ -10,7 +10,12 @@ branches:
 before_deploy:
 - cd ..
 - zip pack.zip ${REPO}
-- git tag "2.0"
+after_success:
+ - git tag "2.0"
+ - git config --global user.email "travis@travis-ci.org"
+ - git config --global user.name "Travis"
+ - git push origin --tags
+
 deploy:
   provider: releases
   api_key:
@@ -18,5 +23,9 @@ deploy:
   file: pack.zip
   on:
     repo: GoodOldJack12/MRCLRSPACK
+<<<<<<< HEAD
 dd:
   secure: mmb+jnPnxOUfP72IDMFcMZaCYFG+21wT87eockRH0DbBXm5n/SuCzVDhOC3R60UT96qCj7kI8xZGPC7Yw9UH8uXG30NmCv9n4YIYSxWqDBK3IWyUI2rytvPzjMJdOCPkYhLl51Mb88ZxU88jjuMLENgfYMzeytArZyc/SA6kykNzWN6G5THVxuvMivPeGVRiwRxtTWiRdO/OZGUJ8kBSPzq9AF42Ucsdn5KOmK5y0ZtVvmzx5qWjkVWquvQd7R+heUbpfwHJda/Fx5z32R8m4TTDBJQm8Lxs5kh/PB2QsPAXGmWaveioEJVWIvxVeq3shCBPttlw3Oz3QTYENW0R+LU/nJfuIbU903xI+oELkVtjS7b1TU1PjeYRrgClvgT/Z/yz1wqMMQp+mx8k2IEH47Bs+3jNmhxzC/paW3agrt4VROQW7zh0rPdtcPnTIInE+UmwJokQgmQsBLYpIV/Z1vMcjbN092lMlssYEh+NJE2PcUI5GAfHMtHCCtMS1tH2Rj0Ku2hCBbTwVaHHnW6icqjBHGq99/veMGz6dcBwl3ghQYOQaErsblx+5qKl8CajhaRWX6Un/u21BJeCEEYbXlAKx2J6gYBP3UhkYQvl2UA1Z3npLgq6I7N4h49+kqQKsvDUcJ1NcBb81h3Id8PYd6MLltmpJrxeIXf+trggyc4=
+=======
+ 
+>>>>>>> fba1ff696238b53dfd1e31f3e42d4f25e40d3e27
