@@ -8,7 +8,7 @@ branches:
   - master
 before_deploy:
 - cd ..
-- zip pack.zip ${REPO}
+- zip -j pack.zip ${REPO}
 
 deploy:
   provider: releases
