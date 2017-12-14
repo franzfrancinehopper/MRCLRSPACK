@@ -7,9 +7,9 @@ branches:
   only:
   - master
 before_deploy:
-- cd ..
-#- zip -j pack.zip ${REPO}
-- tar -czpvf pack.zip -C ${REPO} .
+- cd ${REPO}
+- zip pack.zip ./*
+- mv pack.zip ${TRAVIS_BUILD_REPO}
 
 deploy:
   provider: releases
