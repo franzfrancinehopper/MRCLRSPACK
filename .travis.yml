@@ -3,9 +3,13 @@ script: true
 env:
   global:
   - REPO=${TRAVIS_BUILD_DIR}
+branches:
+  only:
+  - master
 before_deploy:
 - cd ..
 - zip pack.zip ${REPO}
+- git tag "2.0"
 deploy:
   provider: releases
   api_key:
