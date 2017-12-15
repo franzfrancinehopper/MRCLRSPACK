@@ -8,7 +8,7 @@ branches:
   - master
 before_deploy:
 - cd ${REPO}
-- zip -r pack.zip ./
+- zip -r pack.zip assets/ pack.mcmeta pack.png
 - mv pack.zip /home/travis/build/GoodOldJack12/pack.zip
 
 deploy:
