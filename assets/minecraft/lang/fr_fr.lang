@@ -1,0 +1,16 @@
+
+language.name=Français
+language.region=France
+language.code=fr_fr
+
+Elevator: =Ascenseur: 
+
+Locked=Verrouillé
+Unlocked=Déverrouillé
+
+is activated by=est activé par
+has been deactivated.=a été désactivé.
+
+A tower is active. Return to the Past could not be launched.=Une tour est activé. Le Retour vers le Passé ne peut pas être enclenché.
+Not enough energy. Return to the Past could not be launched.=Pas assez d’énergie. Le Retour vers le Passé ne peut pas être enclenché.
+Return to the Past was launched.=Le Retour vers le Passé a était enclenché.
