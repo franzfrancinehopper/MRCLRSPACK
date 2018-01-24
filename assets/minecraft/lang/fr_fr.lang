@@ -1,16 +1,19 @@
-
-language.name=Français
-language.region=France
-language.code=fr_fr
-
 Elevator: =Ascenseur: 
 
 Locked=Verrouillé
 Unlocked=Déverrouillé
 
+FACTORY=USINE
+Boys=Garçons
+Girls=Filles
+
 is activated by=est activé par
 has been deactivated.=a été désactivé.
+No active towers detected.=Aucune tour activée détectée.
+is on cooldown. Please wait.=est en cours de rechargement. Veuillez patienter.
 
 A tower is active. Return to the Past could not be launched.=Une tour est activé. Le Retour vers le Passé ne peut pas être enclenché.
 Not enough energy. Return to the Past could not be launched.=Pas assez d’énergie. Le Retour vers le Passé ne peut pas être enclenché.
 Return to the Past was launched.=Le Retour vers le Passé a était enclenché.
+
+item.bow.name=Main de Odd
